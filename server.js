@@ -7,6 +7,6 @@ app.use(express.json())
 const connectDB = require('./helpers/connectDB')
 
 connectDB()
-app.use('/user',userRoutes)
+
 app.use('/person',personRouter)
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
